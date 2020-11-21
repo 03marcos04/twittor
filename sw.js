@@ -70,7 +70,7 @@ self.addEventListener('fetch', e => {
         // una vez que ejecute la funcion vamos entrar en condiciones
         if (res) return res; // si la respuesta al archivo o la peticion existe regresala al navegador
         else {
-            console.error(e.request); // si el recurso solicitado no se encuentra en los caches retorta la peticion en un console.error para mostrar la pecicion en la pantalla
+            // console.error(e.request); // si el recurso solicitado no se encuentra en los caches retorta la peticion en un console.error para mostrar la pecicion en la pantalla
             return fetch(e.request).then(newRes => { // solicitamos el recurso que no tenemos en cache
                 // llamos al service worker auxiliar
                 return actualizaCacheDinamico(DYNAMIC_CACHE, e.request, newRes);
