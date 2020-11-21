@@ -3,9 +3,9 @@ importScripts('js/sw-utils.js');
 // imports
 
 // cache estatico que son los archivos necesarios
-const STATIC_CACHE = 'static-v3';
+const STATIC_CACHE = 'static-v4';
 // cache dinamico archivos no tan necesarios como imagenes
-const DYNAMIC_CACHE = 'dynamic-v1';
+const DYNAMIC_CACHE = 'dynamic-v2';
 // cache con archivos de librerias 
 const INMUTABLE_CACHE = 'inmutable-v1';
 
