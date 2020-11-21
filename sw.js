@@ -12,7 +12,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 // corazon de la aplicacion
 // app shell normal es un arreglo de direcciones de archivos para que funcione mi aplicacion 
 const APP_SHELL = [
-        '/',
+        // '/',
         'index.html',
         'css/style.css',
         'img/favicon.ico',

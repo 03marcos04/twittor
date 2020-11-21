@@ -1,5 +1,16 @@
+// validacion para obtener el path relation cuando se ejecuta mi aplicacion
+// path puede ser de github otro servidor o local host
+var url = window.location.href;
+var swLocation = '/twittor/sw.js';
+
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/sw.js');
+    if (url.includes('localhots')) {
+        // si detecta local host el service worker esta en la raiz
+        swLocation = '/sw.js'
+    } else {
+        // si no es por que esta en un sitio web y ahi lo registraremos
+        navigator.serviceWorker.register(swLocation);
+    }
 }
 
 // Referencias de jQuery
