@@ -3,7 +3,7 @@ importScripts('js/sw-utils.js');
 // imports
 
 // cache estatico que son los archivos necesarios
-const STATIC_CACHE = 'static-v2';
+const STATIC_CACHE = 'static-v3';
 // cache dinamico archivos no tan necesarios como imagenes
 const DYNAMIC_CACHE = 'dynamic-v1';
 // cache con archivos de librerias 
